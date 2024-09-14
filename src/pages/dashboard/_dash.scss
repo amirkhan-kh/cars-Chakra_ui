@@ -1,0 +1,13 @@
+#Dashboard{
+    padding: 100px 40px 5px 40px;
+    display: flex;
+    gap: 32px;
+    height: 100vh;
+
+    #scroll{
+        overflow:auto;
+        height: 100%;
+        scrollbar-width: thin;
+        scrollbar-color: rgb(84, 84, 167) silver;
+    }
+}

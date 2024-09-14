@@ -1,0 +1,19 @@
+#btn {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background-color: #454755;
+    animation: bouence 1s ease-in-out infinite;
+}
+
+@keyframes bouence {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: 10gipx;
+    }
+    100% {
+        top: 0;
+    }
+}

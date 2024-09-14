@@ -1,0 +1,23 @@
+footer{
+    h1{
+        font-size: 32px;
+        font-weight: 700;
+        color: #3563E9;
+        margin-bottom: 16px;
+    }
+    h3{
+        font-size: 16px;
+        font-weight: 500;
+        color: rgb(95, 93, 93);
+    }
+    ul{
+        gap: 17px;
+        display: flex;
+        flex-direction: column;
+
+    }
+    h2{
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
