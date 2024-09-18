@@ -1,0 +1,455 @@
+.carRientTopParent {
+
+    .carRientTopChild {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+        gap: 32px;
+
+        .leftText {
+            width: 50%;
+            height: 340px;
+            border-radius: 10px;
+            background: #54A6FF;
+
+            .leftCard {
+                overflow: hidden;
+
+                .leftImg {
+                    width: 100%;
+                    height: 340px;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    transform: rotate(-65deg);
+
+                    @for $i from 1 through 6 {
+                        .circle:nth-child(#{$i}) {
+                            width: 600px - (($i - 1) * 80px);
+                            height: 600px - (($i - 1) * 80px);
+                            transform: rotate(90deg);
+                            margin-left: -50px;
+                            border-radius: 50%;
+                            position: absolute;
+                            border: 21px solid #5EABFF;
+                            transform-origin: center;
+                        }
+                    }
+                }
+
+
+            }
+
+            .text {
+                transform: translateY(-310px);
+                margin-left: 27px;
+
+                h2 {
+                    font-size: 32px;
+                    font-weight: 600;
+                    line-height: 48px;
+                    margin-bottom: 16px;
+                    color: #fff;
+                    width: 50%;
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 500;
+                    color: #ffffffe1;
+                    margin-bottom: 20px;
+                }
+
+                button {
+                    background: #3563E9;
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 600;
+                    padding: 10px 20px;
+                    color: #fff;
+                    border-radius: 4px;
+                }
+
+                img {
+                    margin-left: 20%;
+                    width: 388px;
+                    height: 116px;
+                    object-fit: cover;
+                    transform: translateY(-40px);
+                }
+            }
+        }
+
+        .rightText {
+            width: 50%;
+            height: 340px;
+            border-radius: 10px;
+            background: #3563E9;
+
+            .rightCard {
+                overflow: hidden;
+
+                .rightImg {
+                    width: 100%;
+                    height: 370px;
+
+                    .p {
+                        margin-top: 1px;
+                        width: 100%;
+                        height: 30%;
+                        display: flex;
+                        justify-content: space-between;
+                        overflow: hidden;
+
+                        .corner {
+                            clip-path: polygon(61% 0, 100% 50%, 60% 100%, 0% 100%, 40% 51%, 0% 0%);
+                            width: 70px;
+                            height: 100%;
+                            background: #416CEA;
+
+                            &:nth-child(even) {
+                                background: #416CEA;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .text2{
+                transform: translateY(-340px);
+                margin-left: 27px;
+                h2{
+                    margin-bottom: 16px;
+                    font-size: 32px;
+                    line-height: 48px;
+                    font-weight: 600;
+                    color: #fff;
+                }
+                p{
+                    margin-bottom: 20px;
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 500;
+                    color: #ffffffde;
+                }
+                button{
+                    background: #54A6FF;
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 600;
+                    padding: 10px 20px;
+                    color: #fff;
+                    border-radius: 4px;
+                }
+                img{
+                    margin-left: 24%;
+                    width: 352px;
+                    height: 106px;
+                    object-fit: cover;
+                    transform: translateY(-40px);
+                }
+            }
+        }
+
+    }
+
+}
+.parentSelect{
+    gap: 40px;
+    margin-bottom: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .action{
+        width: 50%;
+        border-radius: 10px;
+        padding: 24px 56px;
+        .select{
+            display: flex;
+            width: 100%;
+            .selectCard{
+                background: #fff;
+                display: flex;
+                width: 100%!important;
+                border-radius: 10px;
+                option{
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 390px){
+    .carRientTopParent{
+        width: 90%;
+        .carRientTopChild{
+            padding: 0 20px;
+            margin-bottom: 32px;
+            .leftText{
+                width: 32%;
+                border-radius: 10px;
+                .leftCard{
+                    width: 100%;
+                    border-radius: 10px;
+                }
+                .text{
+                    width: 100%;
+                    margin-left: 16px;
+                    transform: translateY(-330px);
+
+                    h2{
+                        font-size: 20px;
+                        width: 100%;
+                        font-weight: 600;
+                        margin-bottom: 16px;
+                    }
+                    p{
+                        font-size: 16px;
+                        margin-bottom: 24px;
+                        font-weight: 500;
+                        line-height: 19px;
+                    }
+                    button{
+                        margin-top: 12px;
+                    }
+                    img {
+                        margin-left: 5%;
+                        width: 290px;
+                        height: 96px;
+                        object-fit: cover;
+                        transform: translateY(40px);
+                    }
+                }
+            }
+
+
+            .rightText{
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .carRientTopParent{
+        width: 87%;
+        .carRientTopChild{
+            padding: 0 20px;
+            margin-bottom: 32px;
+            .leftText{
+                width: 32%;
+                border-radius: 10px;
+                .leftCard{
+                    width: 100%;
+                    border-radius: 10px;
+                }
+                .text{
+                    width: 100%;
+                    transform: translateY(-330px);
+                    h2{
+                        font-size: 20px;
+                        width: 100%;
+                        font-weight: 600;
+                        margin-bottom: 16px;
+                    }
+                    p{
+                        font-size: 16px;
+                        margin-bottom: 24px;
+                        font-weight: 500;
+                        line-height: 19px;
+                    }
+                    button{
+                        margin-top: 12px;
+                    }
+                    img {
+                        margin-left: 5%;
+                        width: 290px;
+                        height: 96px;
+                        object-fit: cover;
+                        transform: translateY(40px);
+                    }
+                }
+            }
+
+
+            .rightText{
+                display: none;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 430px){
+    .carRientTopParent{
+
+        .carRientTopChild{
+            padding: 0 20px;
+            margin-bottom: 32px;
+            .leftText{
+                width: 32%;
+                border-radius: 10px;
+                .leftCard{
+                    width: 100%;
+                    border-radius: 10px;
+                }
+                .text{
+                    width: 100%;
+                    margin-left: 16px;
+                    transform: translateY(-330px);
+
+                    h2{
+                        font-size: 20px;
+                        width: 100%;
+                        font-weight: 600;
+                        margin-bottom: 16px;
+                    }
+                    p{
+                        font-size: 16px;
+                        margin-bottom: 24px;
+                        font-weight: 500;
+                        line-height: 19px;
+                    }
+                    button{
+                        margin-top: 12px;
+                    }
+                    img {
+                        margin-left: 5%;
+                        width: 290px;
+                        height: 96px;
+                        object-fit: cover;
+                        transform: translateY(40px);
+                    }
+                }
+            }
+
+
+            .rightText{
+                display: none;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 430px){
+    .parentSelect{
+        gap: 32px;
+        width: 100%;
+        margin-bottom: 36px;
+        padding: 0 20px;
+        display: flex;
+        margin-left:-390px ;
+        flex-direction: column;
+        z-index: 111;
+        .action{
+            width: 32%;
+            border-radius: 10px;
+            padding: 16px;
+
+           
+            .select{
+                display: flex;
+                width: 100%;
+                .selectCard{
+                    background: #fff;
+                    display: flex;
+                    width: 100%!important;
+                    border-radius: 10px;
+                    option{
+                        border: none;
+                    }
+                }
+            }
+        }
+        button{transform: translateY(80px);
+            z-index: 999;
+            position: absolute;
+            box-shadow: 5px 2px 7px silver;
+            
+            &:hover{
+                transform: scale(0);
+            }
+        }
+    }
+}
+@media only screen and (max-width: 390px){
+    .parentSelect{
+        gap: 32px;
+        width: 100%;
+        margin-bottom: 36px;
+        padding: 0 20px;
+        display: flex;
+        margin-left:-410px ;
+        flex-direction: column;
+        z-index: 111;
+        .action{
+            width: 335px;
+            border-radius: 10px;
+            padding: 16px;
+
+           
+            .select{
+                display: flex;
+                width: 50%;
+                .selectCard{
+                    background: #fff;
+                    display: flex;
+                    width: 70%!important;
+                    border-radius: 10px;
+                    option{
+                        border: none;
+                    }
+                }
+            }
+        }
+        button{transform: translateY(80px);
+            z-index: 999;
+            position: absolute;
+            box-shadow: 5px 2px 7px silver;
+            
+            &:hover{
+                transform: scale(0);
+            }
+        }
+    }
+}
+@media only screen and (max-width: 375px){
+    .parentSelect{
+        gap: 32px;
+        width: 100%;
+        margin-bottom: 36px;
+        padding: 0 20px;
+        display: flex;
+        margin-left:-420px ;
+        flex-direction: column;
+        z-index: 111;
+        .action{
+            width: 325px;
+            border-radius: 10px;
+            padding: 16px;
+
+           
+            .select{
+                display: flex;
+                width: 50%;
+                .selectCard{
+                    background: #fff;
+                    display: flex;
+                    width: 70%!important;
+                    border-radius: 10px;
+                    option{
+                        border: none;
+                    }
+                }
+            }
+        }
+        button{transform: translateY(80px);
+            z-index: 999;
+            position: absolute;
+            box-shadow: 5px 2px 7px silver;
+            
+            &:hover{
+                transform: scale(0);
+            }
+        }
+    }
+}

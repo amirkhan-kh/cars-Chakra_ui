@@ -1,23 +1,126 @@
-footer{
-    h1{
-        font-size: 32px;
-        font-weight: 700;
-        color: #3563E9;
-        margin-bottom: 16px;
-    }
-    h3{
-        font-size: 16px;
-        font-weight: 500;
-        color: rgb(95, 93, 93);
-    }
-    ul{
-        gap: 17px;
-        display: flex;
-        flex-direction: column;
+footer { 
+    padding: 50px 30px;
+    width: 100%;
+    .container {
+        padding: 20px 14px;
 
+        .footerParent {
+            display: flex;
+            justify-content: space-between;
+
+            h1 {
+                font-size: 32px;
+                font-weight: 700;
+                color: #3563E9;
+                margin-bottom: 16px;
+            }
+
+            h3 {
+                font-size: 16px;
+                font-weight: 500;
+                color: rgb(95, 93, 93);
+            }
+
+            .footerChild {
+                display: flex;
+                gap: 40px;
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 17px;
+
+                    li {
+                        font-size: 14px;
+
+                        &.font-bold {
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
     }
-    h2{
-        font-size: 16px;
-        font-weight: 600;
+
+    .flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding-bottom: 6px;
+
+        h2 {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .gap-14 {
+            display: flex;
+            gap: 14px;
+
+            h2 {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 375px){
+    footer{
+        background: #fff;
+        .container{
+            padding: 20px;
+            margin-bottom: 30px;
+            .footerParent{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 100%;
+    
+                
+                .footerChild{
+                    display: flex;
+                    padding-top: 40px;
+
+                    ul{
+
+
+                        li{
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 430px){
+    footer{
+        background: #fff;
+        .container{
+            padding: 60px;
+            margin-bottom: 30px;
+            .footerParent{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 100%;
+    
+                
+                .footerChild{
+                    display: flex;
+                    padding-top: 40px;
+
+                    ul{
+
+
+                        li{
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

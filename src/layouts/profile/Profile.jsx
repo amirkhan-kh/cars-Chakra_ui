@@ -43,22 +43,24 @@ const Profile = () => {
     )
   );
   
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
-  const handleClick = () => {
-    navigate('/');
-  };
+  // const handleClick = () => {
+  //   navigate('/');
+  // };
   
   return (
     <>
       <modalStore.Provider value={{isOpen, setModal}}>
        <Header />
-        <section className="flex items-center bg-[#F6F7F9] h-[100vh]">
+        <main className=" bg-slate-600">
+        <section className=" bg-[#F6F7F9] flex py-6">
         {!hideLayout && <Aside />}
           
             <Outlet/>
-            <button onClick={handleClick} id="btn"  className="fixed ms-[95%] mt-[540px] bg-slate-800  text-white text-[24px] "><i className="bi bi-house"></i></button>
+            {/* <button onClick={handleClick} id="btn"  className="fixed ms-[95%] mt-[540px] bg-slate-800  text-white text-[24px] "><i className="bi bi-house"></i></button> */}
         </section>
+        </main>
       </modalStore.Provider>
     </>
   )

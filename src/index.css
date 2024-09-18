@@ -37,6 +37,9 @@ body {
 ol, ul {
 	list-style: none;
 }
+li{
+	text-decoration: none;
+}
 blockquote, q {
 	quotes: none;
 }
@@ -61,3 +64,11 @@ input[type="range"]{
     accent-color: rgb(50, 31, 218);
     width: 90%;
 }
+main{
+	background: #000;
+}
+input:focus, select:focus {
+	outline: none; 
+	border: none;  
+  }
+  

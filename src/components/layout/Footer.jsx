@@ -2,14 +2,14 @@ import './_footer.scss'
 export const Footer = () => {
     const currentYear = new Date().getFullYear();
   return (
-    <footer >
-        <div className="container py-20 px-14">
-            <div className="flex items-center justify-between w-full">
+    <footer className="">
+        <div className="container">
+            <div className="footerParent">
                 <div>
                     <h1>zetmarket</h1>
                     <h3>Our vision is to provide convenience <br />and help increase your sales business.</h3>
                 </div>
-                <div className="flex items-center gap-16">
+                <div className="footerChild">
                     <ul>
                         <li className="font-bold"><strong>About</strong></li>
                         <li>How it works</li>
