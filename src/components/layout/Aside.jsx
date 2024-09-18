@@ -7,7 +7,7 @@ const Aside = () => {
     window.location.href = "/login"
   }
   return (
-    <aside className="h-[100vh] w-[200px] bg-white">
+    <aside className="h-[100vh] w-[200px] bg-white mt-[-27px]">
       <ul>
         <li className="ms-3">MAIN MENU</li>
       </ul>

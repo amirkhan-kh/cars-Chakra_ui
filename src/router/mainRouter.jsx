@@ -9,13 +9,13 @@ const appChildren = [
     children: [
       { path: "/", element: <Dashboard/> },
       { path: "/carrent", element: <CarRent/> },
-      { path: "/insight", element: <Insight/> },
-      { path: "/reuimbers", element: <Reuimbers/> },
-      { path: "/inbox", element: <Inbox/> },
-      { path: "/calendar", element: <Calendar/> },
-      { path: "/setting", element: <Setting/> },
-      { path: "/helpcenter", element: <HelpCenter/> },
-      { path: "/darkmode", element: <DarkMode/>}
+      // { path: "/insight", element: <Insight/> },
+      // { path: "/reuimbers", element: <Reuimbers/> },
+      // { path: "/inbox", element: <Inbox/> },
+      // { path: "/calendar", element: <Calendar/> },
+      // { path: "/setting", element: <Setting/> },
+      // { path: "/helpcenter", element: <HelpCenter/> },
+      // { path: "/darkmode", element: <DarkMode/>}
     ]
   },
   { path: "/login", element: <Login/> },

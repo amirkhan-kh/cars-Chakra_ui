@@ -9,26 +9,26 @@ export const navSection = [
         name: "Car Rent",
         icon: "bi bi-car-front"
     },
-    {
-        path: "/insight",
-        name: "Insight",
-        icon: "bi bi-bar-chart-line"
-    },
-    {
-        path: "/reuimbers",
-        name: "Reuimbers",
-        icon: "bi bi-credit-card-fill"
-    },
-    {
-        path: "/inbox",
-        name: "Inbox",
-        icon: "bi bi-chat-square-dots"
-    },
-    {
-        path: "/calendar",
-        name: "Calendar",
-        icon: "bi bi-calendar"
-    },
+    // {
+    //     path: "/insight",
+    //     name: "Insight",
+    //     icon: "bi bi-bar-chart-line"
+    // },
+    // {
+    //     path: "/reuimbers",
+    //     name: "Reuimbers",
+    //     icon: "bi bi-credit-card-fill"
+    // },
+    // {
+    //     path: "/inbox",
+    //     name: "Inbox",
+    //     icon: "bi bi-chat-square-dots"
+    // },
+    // {
+    //     path: "/calendar",
+    //     name: "Calendar",
+    //     icon: "bi bi-calendar"
+    // },
     
     
    

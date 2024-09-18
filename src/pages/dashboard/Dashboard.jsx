@@ -13,7 +13,7 @@ import Example from '../../components/layout/char';
 const Dashboard = () => {
   const data = carsData.slice(0, 1);
   return (
-    <div className=" w-[100%]  flex " id="Dashboard">
+    <div className=" w-[100%]  flex  mt-[-95px] " id="Dashboard">
       <Box
         bg="white"
         w="50%"
@@ -21,7 +21,8 @@ const Dashboard = () => {
         p="15"
         color="black"
         boxShadow="sm"
-        rounded="md"
+        rounded="lg"
+        className="rounded-xl flex flex-col justify-between"
       >
         <div className="mb-4">
           <h2 className="text-[20px] font-semibold mb-1">Details Rental</h2>
@@ -194,12 +195,12 @@ const Dashboard = () => {
 
 
       <div className="flex flex-col gap-4 w-[50%]">
-        <Box bg="white" h="41vh" p="15"  color="black" boxShadow="sm" rounded="md">
+        <Box bg="white" h="41vh" p="15"  color="black" boxShadow="sm" rounded="md" className="rounded-lg">
           <Example/>
         </Box>
         <Box bg="white" h="38.5vh" p="5" color="black" boxShadow="sm" rounded="md">
-        <h1 className="text-[20px] font-semibold text-black">Recent Transaction</h1>
-          <div id="scroll">
+        <h1 className="text-[20px] font-semibold text-black absolute">Recent Transaction</h1>
+          <div id="scroll" >
           {
             carsData.map((item, index)=>{
               return(
